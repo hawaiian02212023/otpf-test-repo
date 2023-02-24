@@ -1,0 +1,34 @@
+.sampleSVG {
+    width: 40px;
+    height: 40px;
+    animation: rotate-clockwise 2s linear infinite;
+}
+
+@keyframes rotate-clockwise {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+.sampleSVG circle {
+    stroke: #FFF;
+    stroke-width: 4;
+    fill: none;
+    stroke-linecap: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 200;
+    animation: circle-progress 2s ease-in-out infinite;
+}
+
+@keyframes circle-progress {
+    0% { 
+        stroke-dashoffset: 200;
+    }
+
+    50% {
+        stroke-dashoffset: 100;
+    }
+
+    100% {
+        stroke-dashoffset: 10;
+    }
+}

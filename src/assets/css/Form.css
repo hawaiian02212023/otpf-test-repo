@@ -1,0 +1,58 @@
+.form-base {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: var(--standard-padding);
+    gap: var(--standard-gap);
+}
+
+.form-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--standard-gap);
+}
+
+.form-group-item {
+    display: flex;
+}
+
+.form-group-item > label {
+    font-size: 16px;
+    text-align: left;
+    line-height: 35px;
+    position: relative;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+.form-datetime-picker {
+    display: flex;
+}
+
+fieldset {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--standard-gap);
+    border: none;
+}
+
+span[aria-label='required'] {
+    position: relative;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+/** try responsive **/
+@media screen and (max-width: 700px) {
+    .form-body {
+        grid-template-columns: 1fr;
+    }
+    button[type='submit'] {
+       margin: 10px 0px 10px auto;
+    }
+    fieldset:nth-child(2) {
+        grid-row-start: 1;
+    }
+}
