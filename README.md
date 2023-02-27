@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/otpf-devops-org/otpf-devops-proj/_apis/build/status/hawaiian02212023.otpf-test-repo?branchName=main)](https://dev.azure.com/otpf-devops-org/otpf-devops-proj/_build/latest?definitionId=5&branchName=main)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
