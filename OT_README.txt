@@ -48,4 +48,5 @@ CONTAINS
  8. Cleaned version from previous. (removed obsolete functions, etc...)
  9. Mapped JSON output using dummy json in dummy_post_scenario.js
 
+test
 -- END --
